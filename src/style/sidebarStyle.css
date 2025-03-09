@@ -1,4 +1,9 @@
 .sidebar{
     display: flex;
     justify-content: flex-start;
+    margin-left: 5px;
+}
+
+.menu-icon{
+    color: rgb(201,198,186);
 }

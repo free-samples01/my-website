@@ -10,7 +10,7 @@ export const Taskbar = () => {
 	return (
 		<div className="sidebar">
 			<Button onClick={() => setShowSidebar(!showSidebar)}>
-				<MenuIcon />
+				<MenuIcon className="menu-icon" />
 			</Button>
 			<Drawer open={showSidebar} onClose={() => setShowSidebar(false)}>
 				<SidebarItems />
