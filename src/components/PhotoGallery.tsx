@@ -1,11 +1,23 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import { imageData } from "../data/images";
 import srcset from "../utils/imageUtils";
+import { useEffect, useState } from "react";
 
 export const PhotoGallery = () => {
+	const [rowHeight, setRowHeight] = useState(window.innerHeight * 0.16);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setRowHeight(window.innerHeight * 0.16);
+		};
+
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
 	return (
 		<div>
-			<ImageList variant="quilted" cols={4} rowHeight={110}>
+			<ImageList variant="quilted" cols={4} rowHeight={rowHeight}>
 				{imageData.map((item) => (
 					<ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
 						<img
