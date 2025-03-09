@@ -1,6 +1,7 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button, Drawer } from "@mui/material";
 import { useState } from "react";
+import { SidebarItems } from "./SidebarItems";
 
 export const Taskbar = () => {
 	const [showSidebar, setShowSidebar] = useState(false);
@@ -10,7 +11,9 @@ export const Taskbar = () => {
 			<Button onClick={() => setShowSidebar(!showSidebar)}>
 				<MenuIcon />
 			</Button>
-			<Drawer open={showSidebar} onClose={() => setShowSidebar(false)}></Drawer>
+			<Drawer open={showSidebar} onClose={() => setShowSidebar(false)}>
+				<SidebarItems />
+			</Drawer>
 		</div>
 	);
 };
