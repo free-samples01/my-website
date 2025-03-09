@@ -9,7 +9,11 @@ export const Taskbar = () => {
 
 	return (
 		<div className="sidebar">
-			<Button onClick={() => setShowSidebar(!showSidebar)}>
+			<Button
+				onClick={() => setShowSidebar(!showSidebar)}
+				sx={{ justifyContent: "flex-start" }}
+				className="menu-button"
+			>
 				<MenuIcon className="menu-icon" />
 			</Button>
 			<Drawer open={showSidebar} onClose={() => setShowSidebar(false)}>

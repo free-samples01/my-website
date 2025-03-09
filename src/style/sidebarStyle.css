@@ -1,7 +1,7 @@
 .sidebar{
     display: flex;
     justify-content: flex-start;
-    margin-left: 5px;
+    align-items: flex-start;
 }
 
 .menu-icon{
