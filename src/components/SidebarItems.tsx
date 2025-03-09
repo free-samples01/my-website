@@ -1,6 +1,6 @@
 import HomeIcon from "@mui/icons-material/Home";
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import "../style/sidebarStyle.css"
+import "../style/sidebarItemStyle.css";
 
 export const SidebarItems = () => {
 	const pages = [
@@ -10,7 +10,7 @@ export const SidebarItems = () => {
 		},
 	];
 	return (
-		<Box className="sidebar" role="presentation">
+		<Box className="sidebar-items" role="presentation">
 			<List>
 				{pages.map((page, index) => (
 					<ListItem key={index} disablePadding={true}>

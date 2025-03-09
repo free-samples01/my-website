@@ -1,3 +1,4 @@
 .sidebar{
-    width: 250px;
+    display: flex;
+    justify-content: flex-start;
 }

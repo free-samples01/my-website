@@ -4,7 +4,6 @@ export default function HomePage() {
 	return (
 		<>
 			<Taskbar />
-			<div>Home Page</div>
 		</>
 	);
 }
