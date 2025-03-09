@@ -6,7 +6,7 @@ import "../style/homeStyle.css";
 
 export default function Home() {
 	return (
-		<>
+		<div className="home">
 			<Taskbar />
 			<Grid container spacing={2}>
 				<Grid size={{ xs: 12, sm: 5, md: 5 }} className="welcome-container">
@@ -16,6 +16,6 @@ export default function Home() {
 					<PhotoGallery />
 				</Grid>
 			</Grid>
-		</>
+		</div>
 	);
 }

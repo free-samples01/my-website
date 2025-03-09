@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 
 function App() {
 	return (
-		<div style={{ width: "95vw", height: "90vh" }}>
+		<div style={{ width: "100%", height: "100%" }}>
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />

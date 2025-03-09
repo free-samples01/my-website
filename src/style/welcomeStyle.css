@@ -1,12 +1,4 @@
 .welcome{
    padding-top: 1rem;
-   padding-left: 2rem;
    padding-right: 2rem;
-
 }
-
-@media (max-width: 600px) {
-   h1 {
-     font-size: 1.5rem;
-   }
- }
