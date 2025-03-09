@@ -9,10 +9,10 @@ export default function HomePage() {
 		<>
 			<Taskbar />
 			<Grid container spacing={2}>
-				<Grid size={5} className="welcome-container">
+				<Grid size={{ xs: 12, sm: 5, md: 5 }} className="welcome-container">
 					<Welcome />
 				</Grid>
-				<Grid size={7}>
+				<Grid size={{ xs: 12, sm: 7, md: 7 }}>
 					<PhotoGallery />
 				</Grid>
 			</Grid>

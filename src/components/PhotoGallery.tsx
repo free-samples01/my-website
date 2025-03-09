@@ -8,6 +8,10 @@ export const PhotoGallery = () => {
 
 	useEffect(() => {
 		const handleResize = () => {
+			if (window.innerWidth < 600) {
+				setRowHeight(window.innerHeight * 0.1);
+				return;
+			}
 			setRowHeight(window.innerHeight * 0.16);
 		};
 
