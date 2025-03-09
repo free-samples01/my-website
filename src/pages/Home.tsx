@@ -4,7 +4,7 @@ import { Welcome } from "../components/Welcome";
 import { PhotoGallery } from "../components/PhotoGallery";
 import "../style/homeStyle.css";
 
-export default function HomePage() {
+export default function Home() {
 	return (
 		<>
 			<Taskbar />
