@@ -1,9 +1,8 @@
 import { Typography } from "@mui/material";
-import "../style/welcomeStyle.css";
 
 export const Welcome = () => {
 	return (
-		<div className="welcome">
+		<div className="text">
 			<Typography
 				variant="h1"
 				sx={{
