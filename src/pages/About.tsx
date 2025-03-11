@@ -8,7 +8,7 @@ export default function About() {
 	return (
 		<div className="page">
 			<Taskbar />
-			<Grid container spacing={2} className="grid-container padding-4">
+			<Grid container spacing={2} className="padding-4">
 				<Grid size={{ xs: 12, sm: 8, md: 8 }} className="intro-grid">
 					<Introduction />
 				</Grid>
