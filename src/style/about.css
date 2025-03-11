@@ -1,0 +1,10 @@
+.portrait{
+    height: 350px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.intro-grid {
+    display: flex;
+}
+  

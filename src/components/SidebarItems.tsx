@@ -2,6 +2,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "../style/sidebarItemStyle.css";
+import PersonIcon from "@mui/icons-material/Person";
 
 export const SidebarItems = () => {
 	const navigate = useNavigate();
@@ -10,6 +11,11 @@ export const SidebarItems = () => {
 			name: "Home",
 			icon: <HomeIcon />,
 			path: "/",
+		},
+		{
+			name: "About Me",
+			icon: <PersonIcon />,
+			path: "/about",
 		},
 	];
 	return (
