@@ -12,7 +12,7 @@ export const Introduction = () => {
 			>
 				About Me
 			</Typography>
-			<p>
+			<p className="text-size">
 				A bit more about me. I discovered my passion for coding over 5 years ago when I
 				enrolled onto GCHQ's Cyber Discover programme. Whilst I did explore other interests
 				of mine at A-Level, using code to problem solve has always been a fun challenge of
