@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid2";
 import { Taskbar } from "../components/Sidebar";
 import { Introduction } from "../components/Introduction";
-import Me from "../assets/Images/Me.jpg";
+import Me from "../assets/images/Me.jpg";
 import "../style/about.css";
 
 export default function About() {
