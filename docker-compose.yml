@@ -1,0 +1,14 @@
+services: 
+  front-end:
+    container_name: web_service
+    image: website_frontend
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 0.0.0.0:5173:5173
+    volumes:
+      - ./dist:/app/dist
+      - ./:/app
+      - /app/node_modules
