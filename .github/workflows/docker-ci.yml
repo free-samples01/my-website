@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/website_frontend
+          images: ${{ secrets.DOCKER_USERNAME }}/personal-portfolio
           tags: |
             type=raw,value=${{ env.VERSION }}
             type=raw,value=latest
